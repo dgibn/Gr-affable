@@ -50,7 +50,11 @@ int main(){
             customer[i] = price[boughtIndex];
         }
         else {          // else give -1 to customer
-            customer[i] = -1;
+            vector<int> temp;
+            temp=price;
+            temp.erase[boughtIndex];
+            customer[i]=price[getMinIndex(price)];
+        };
         }
         /**
          * may be something is wrong here
